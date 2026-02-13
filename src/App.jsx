@@ -15,9 +15,9 @@ function App() {
       <h1>Demonically Online</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          Love is {count}
+          Felix love is {count}
         </button>
-        <p>Press to love!</p>
+        <p>Press to love Felix!</p>
       </div>
       <p className="read-the-docs">
         Crazy demon art by Felix Blackmon
