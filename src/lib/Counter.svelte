@@ -5,6 +5,7 @@
   }
 </script>
 
+<p>Press to love Felix!</p>
 <button onclick={increment}>
   Felix love is {count}
 </button>
