@@ -7,7 +7,7 @@
 </script>
 
 <img src={profilePic} class="profile" alt="Demonically Online" />
-<h1>Demonically Online</h1>
+<h1>Test Dev</h1>
 <div class="logo-container">
     <a href="https://x.com/demoniclyonline" target="_blank" rel="noreferrer">
         <figure>
