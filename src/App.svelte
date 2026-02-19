@@ -8,8 +8,6 @@
     <Header />
   </div>
 
-  <p>Press to love Felix!</p>
-
   <div class="card">
     <Counter />
   </div>
