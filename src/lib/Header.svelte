@@ -1,5 +1,5 @@
 <script lang="ts">
-    import profilePic from "../assets/profile.webp";
+    import profilePic from "../assets/profile.png";
     import twitterLogo from "../assets/twitter_icon.png";
     import blueskyLogo from "../assets/bluesky_icon.png";
     import toyhouseLogo from "../assets/toyhouse_icon.png";
