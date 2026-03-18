@@ -6,8 +6,10 @@
     import vgenLogo from "$lib/assets/vgen_icon.png";
 </script>
 
-<img src={profilePic} class="profile" alt="Demonically Online" />
-<h1>Demonically Online</h1>
+<div class="profile-container">
+    <img src={profilePic} class="profile" alt="Demonically Online" />
+    <h1>Demonically Online</h1>
+</div>
 <div class="logo-container">
     <a href="https://x.com/demoniclyonline" target="_blank" rel="noreferrer">
         <figure>
@@ -46,25 +48,29 @@
         </figure>
     </a>
 </div>
-
-<div>
-    <a href="/gallery">Art Gallery</a>
-</div>
-<div>
-    <a href="/about">About Me</a>
-</div>
-<div>
-    <a href="/commissions">Commissions Info</a>
+<div class="other-pages">
+    <div>
+        <a href="/gallery"><h2>Art Gallery</h2></a>
+    </div>
+    <div>
+        <a href="/about"><h2>About Me</h2></a>
+    </div>
+    <div>
+        <a href="/commissions"><h2>Commisions Info</h2></a>
+    </div>
 </div>
 
 <style>
     .logo-container {
+        text-align: center;
         display: flex;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 0.25em;
+        gap: 1.25em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     figure {
         margin: 0;
@@ -74,11 +80,13 @@
         display: inline-flex;
         flex-direction: column;
         align-items: center;
-        text-decoration: none;
+        font-weight: 500;
+        color: #e2e2e2;
+        text-decoration: inherit;
     }
     .logo {
         max-height: 8em;
-        padding: 1.5em;
+        padding: 0.25em;
         will-change: transform;
         transition: transform 300ms ease-in-out;
         &:hover {
@@ -88,6 +96,14 @@
     .profile {
         max-height: 10em;
         animation: float 4s ease-in-out infinite;
+    }
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .other-pages {
+        text-align: center;
     }
 
     @media (max-width: 768px) {
