@@ -1,52 +1,49 @@
 <script lang="ts">
     import profilePic from "$lib/assets/profile.png";
-    import twitterLogo from "$lib/assets/twitter_icon.png";
-    import blueskyLogo from "$lib/assets/bluesky_icon.png";
-    import toyhouseLogo from "$lib/assets/toyhouse_icon.png";
-    import vgenLogo from "$lib/assets/vgen_icon.png";
+    import blueskyPic from "$lib/assets/bluesky_icon.png";
+    import twitterPic from "$lib/assets/twitter_icon.png";
+    import type {
+        EmblaCarouselType,
+        EmblaOptionsType,
+        EmblaPluginType,
+    } from "embla-carousel";
+    import useEmblaCarousel from "embla-carousel-svelte";
+
+    let emblaApi: EmblaCarouselType;
+    let options: EmblaOptionsType = { loop: true };
+    const plugins: EmblaPluginType[] = [];
+
+    const goToPrev = () => emblaApi?.scrollPrev();
+    const goToNext = () => emblaApi?.scrollNext();
+
+    const onInit = (event: CustomEvent<EmblaCarouselType>) => {
+        emblaApi = event.detail;
+    };
 </script>
 
-<div class="profile-container">
-    <img src={profilePic} class="profile" alt="Demonically Online" />
-    <h1>Demonically Online</h1>
-</div>
-<div class="logo-container">
-    <a href="https://x.com/demoniclyonline" target="_blank" rel="noreferrer">
-        <figure>
-            <img src={twitterLogo} class="logo" alt="Twitter Logo" />
-            <figcaption>Twitter</figcaption>
-        </figure>
-    </a>
-    <a
-        href="https://bsky.app/profile/demonically-online.bsky.social"
-        target="_blank"
-        rel="noreferrer"
+<div class="embla">
+    <div
+        class="embla__viewport"
+        onemblaInit={onInit}
+        use:useEmblaCarousel={{ options, plugins }}
     >
-        <figure>
-            <img src={blueskyLogo} class="logo" alt="Bluesky Logo" />
-            <figcaption>Bluesky</figcaption>
-        </figure>
-    </a>
-    <a
-        href="https://toyhou.se/demonically_online"
-        target="_blank"
-        rel="noreferrer"
-    >
-        <figure>
-            <img src={toyhouseLogo} class="logo" alt="Toyhouse Logo" />
-            <figcaption>Toyhouse</figcaption>
-        </figure>
-    </a>
-    <a
-        href="https://vgen.co/demonically_online"
-        target="_blank"
-        rel="noreferrer"
-    >
-        <figure>
-            <img src={vgenLogo} class="logo" alt="VGen Logo" />
-            <figcaption>VGen</figcaption>
-        </figure>
-    </a>
+        <div class="embla__container">
+            <div class="embla__slide">
+                <img src={profilePic} alt="Profile" />
+            </div>
+            <div class="embla__slide">
+                <img src={blueskyPic} alt="Custom Bluesky Logo" />
+            </div>
+            <div class="embla__slide">
+                <img src={twitterPic} alt="Custom Twitter Logo" />
+            </div>
+        </div>
+    </div>
+
+    <div class="control-buttons">
+        <button class="embla__prev" onclick={goToPrev}>Prev</button>
+        <button class="embla__next" onclick={goToNext}>Next</button>
+    </div>
 </div>
 <div class="other-pages">
     <div>
@@ -61,73 +58,52 @@
 </div>
 
 <style>
-    .logo-container {
-        text-align: center;
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .embla {
+        max-width: 30rem;
+        margin: auto;
+        --slide-size: 50%;
+        --slide-spacing: 20px;
+    }
+
+    .embla__viewport {
+        overflow: hidden;
+    }
+
+    .embla__container {
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        margin-left: calc(var(--slide-spacing) * -1);
+    }
+
+    .embla__slide {
+        flex: 0 0 var(--slide-size);
+        min-width: 0;
+        padding-left: var(--slide-spacing);
+    }
+
+    .control-buttons {
         display: flex;
         align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 1.25em;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        gap: 0.25em;
     }
-    figure {
-        margin: 0;
-        flex-shrink: 1;
-    }
+
     a {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
         font-weight: 500;
         color: #e2e2e2;
         text-decoration: inherit;
-    }
-    .logo {
-        max-height: 8em;
-        padding: 0.25em;
-        will-change: transform;
-        transition: transform 300ms ease-in-out;
-        &:hover {
-            transform: scale(1.5, 1.5);
-        }
-    }
-    .profile {
-        max-height: 10em;
-        animation: float 4s ease-in-out infinite;
-    }
-    .profile-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .other-pages {
         text-align: center;
     }
 
-    @media (max-width: 768px) {
-        .logo {
-            max-height: 6em;
-            padding: 1em;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .logo {
-            max-height: 4em;
-            padding: 0.5em;
-        }
-    }
-    @keyframes float {
-        0% {
-            transform: translateY(0px);
-        }
-        50% {
-            transform: translateY(-30px);
-        }
-        100% {
-            transform: translateY(0px);
-        }
+    img {
+        max-width: 15em;
     }
 </style>
