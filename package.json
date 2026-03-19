@@ -22,5 +22,8 @@
 	},
 	"dependencies": {
 		"embla-carousel-svelte": "^8.6.0"
+	},
+	"overrides": {
+		"cookie": "^0.7.0"
 	}
 }
