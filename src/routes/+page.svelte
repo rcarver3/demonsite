@@ -96,7 +96,6 @@
 
     a {
         font-weight: 500;
-        color: #e2e2e2;
         text-decoration: inherit;
     }
     .other-pages {
