@@ -1,7 +1,7 @@
 <script lang="ts">
-    import profilePic from "$lib/assets/profile.png";
-    import blueskyPic from "$lib/assets/bluesky_icon.png";
-    import twitterPic from "$lib/assets/twitter_icon.png";
+    import profilePic from "$lib/icons/profile.png";
+    import blueskyPic from "$lib/icons/bluesky_icon.png";
+    import twitterPic from "$lib/icons/twitter_icon.png";
     import type {
         EmblaCarouselType,
         EmblaOptionsType,

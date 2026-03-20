@@ -1,9 +1,9 @@
 <script lang="ts">
-    import profilePic from "$lib/assets/profile.png";
-    import twitterLogo from "$lib/assets/twitter_icon.png";
-    import blueskyLogo from "$lib/assets/bluesky_icon.png";
-    import toyhouseLogo from "$lib/assets/toyhouse_icon.png";
-    import vgenLogo from "$lib/assets/vgen_icon.png";
+    import profilePic from "$lib/icons/profile.png";
+    import twitterLogo from "$lib/icons/twitter_icon.png";
+    import blueskyLogo from "$lib/icons/bluesky_icon.png";
+    import toyhouseLogo from "$lib/icons/toyhouse_icon.png";
+    import vgenLogo from "$lib/icons/vgen_icon.png";
 </script>
 
 <div class="profile-container">
