@@ -46,48 +46,26 @@
 
 <style>
     .logo-container {
+        overflow: auto;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 25px 12px;
+    }
+    
+    .logo-container a {
+        float: left;
         text-align: center;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.25em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    figure {
-        margin: 0;
-        flex-shrink: 1;
-    }
-    a {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: 500;
-        text-decoration: inherit;
+        text-decoration: none;
+        font-size: 14px;
+        width: 25%;
+        padding: 0 15px;
     }
     .logo {
-        max-height: 8em;
-        padding: 0.25em;
-        will-change: transform;
         transition: transform 300ms ease-in-out;
         &:hover {
-            transform: scale(1.5, 1.5);
+            transform: scale(1.75, 1.75);
         }
     }
 
-    @media (max-width: 768px) {
-        .logo {
-            max-height: 6em;
-            padding: 1em;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .logo {
-            max-height: 4em;
-            padding: 0.5em;
-        }
-    }
 </style>
