@@ -1,4 +1,6 @@
 <script lang="ts">
+    let { data } = $props();
+
     import profilePic from "$lib/icons/profile.png";
     import blueskyPic from "$lib/icons/bluesky_icon.png";
     import twitterPic from "$lib/icons/twitter_icon.png";
@@ -28,15 +30,11 @@
         use:useEmblaCarousel={{ options, plugins }}
     >
         <div class="embla__container">
-            <div class="embla__slide">
-                <img src={profilePic} alt="Profile" />
-            </div>
-            <div class="embla__slide">
-                <img src={blueskyPic} alt="Custom Bluesky Logo" />
-            </div>
-            <div class="embla__slide">
-                <img src={twitterPic} alt="Custom Twitter Logo" />
-            </div>
+            {#each data.artOutput as src}
+                <div class="embla__slide">
+                    <img {src} alt="Art Carousel" />
+                </div>
+            {/each}
         </div>
     </div>
 
