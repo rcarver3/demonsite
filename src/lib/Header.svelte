@@ -16,7 +16,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px 0;
+        padding: 15px 0;
     }
     .header a {
         height: fit-content;
@@ -35,7 +35,7 @@
             transform: translateY(0px);
         }
         50% {
-            transform: translateY(-20px);
+            transform: translateY(-15px);
         }
         100% {
             transform: translateY(0px);
