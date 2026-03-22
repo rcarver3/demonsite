@@ -1,9 +1,6 @@
 <script lang="ts">
     let { data } = $props();
 
-    import profilePic from "$lib/icons/profile.png";
-    import blueskyPic from "$lib/icons/bluesky_icon.png";
-    import twitterPic from "$lib/icons/twitter_icon.png";
     import type {
         EmblaCarouselType,
         EmblaOptionsType,
