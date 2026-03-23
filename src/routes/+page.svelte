@@ -39,7 +39,9 @@
     };
 </script>
 
+<!--
 <div class="promo">Commissions come with a free bonus sketch during TFF!</div>
+-->
 
 <div class="embla">
     <div
