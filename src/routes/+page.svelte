@@ -141,7 +141,8 @@
     }
 
     .embla__prev:hover,
-    .embla__next:hover {
+    .embla__next:hover,
+    .embla__dot:hover {
         opacity: 1;
     }
 

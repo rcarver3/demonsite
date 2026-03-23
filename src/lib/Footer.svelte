@@ -5,7 +5,7 @@
     import vgenLogo from "$lib/icons/vgen_icon.png";
 </script>
 
-<div style="display: content">
+<div class="container">
     <a href="https://x.com/demoniclyonline" target="_blank" rel="noreferrer">
         <figure>
             <img src={twitterLogo} class="logo" alt="Twitter Logo" />
@@ -55,6 +55,14 @@
     figure {
         margin: 0;
         padding: 1rem;
+    }
+
+    figcaption {
+        padding: 0.25rem 0;
+    }
+
+    .container {
+        display: contents;
     }
 
     .logo {

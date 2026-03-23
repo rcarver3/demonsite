@@ -7,9 +7,18 @@
 body {
     font-family: "Comfortaa", system-ui, sans-serif;
     font-size: 1.6rem;
-    margin: 0;
     background-color: #4a306d;
+    margin: auto;
     color: #bfd5f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    max-width: 450px;
+}
+
+.main {
+    flex: 1;
+    margin: auto;
 }
 
 a {
@@ -24,14 +33,13 @@ img {
 }
 
 header {
+    margin: auto;
     padding: 0.5rem 1rem;
     font-size: 2rem;
     font-weight: bold;
 }
 
 footer {
-    position: fixed;
-    overflow: auto;
-    bottom: 0dvh;
-    padding: 0.5rem 1rem;
+    margin: auto;
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
 }

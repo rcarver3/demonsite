@@ -10,7 +10,9 @@
 	<Header />
 </header>
 
-{@render children()}
+<div class="main">
+	{@render children()}
+</div>
 
 <footer>
 	<Footer />
