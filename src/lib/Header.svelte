@@ -6,28 +6,43 @@
     <a href="/" class="logo">
         <img src={profilePic} class="logo" alt="Demonically Online" />
     </a>
-    <a href="/" class="title">
-        Demonically Online
-    </a>
+    <a href="/" class="title"> Demonically Online </a>
+</div>
+
+<div class="navbar">
+    <nav>
+        <a href="/gallery">Gallery</a>
+        <a href="/commissions">Commisions</a>
+        <a href="/about">About</a>
+    </nav>
 </div>
 
 <style>
+    .header a {
+        color: #6f9ceb;
+    }
+
+    img {
+        width: 50vw;
+    }
+    nav {
+        display: flex;
+        margin: 0.5rem 1rem;
+    }
+
+    nav a {
+        flex: 1;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
     .header {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 15px 0;
-    }
-    .header a {
-        height: fit-content;
     }
     .logo {
-        flex: 1 3 auto;
         animation: float 4s ease-in-out infinite;
-    }
-    .title {
-        font-weight: bold;
-        font-size: xx-large;
     }
 
     @keyframes float {

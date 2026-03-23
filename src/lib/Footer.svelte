@@ -5,7 +5,7 @@
     import vgenLogo from "$lib/icons/vgen_icon.png";
 </script>
 
-<div class="logo-container">
+<div style="display: content">
     <a href="https://x.com/demoniclyonline" target="_blank" rel="noreferrer">
         <figure>
             <img src={twitterLogo} class="logo" alt="Twitter Logo" />
@@ -45,22 +45,18 @@
 </div>
 
 <style>
-    .logo-container {
-        overflow: auto;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding: 25px 12px;
-    }
-    
-    .logo-container a {
+    a {
         float: left;
         text-align: center;
-        text-decoration: none;
-        font-size: 14px;
+        font-size: 1.0rem;
         width: 25%;
-        padding: 0 15px;
     }
+
+    figure {
+        margin: 0;
+        padding: 1rem;
+    }
+
     .logo {
         transition: transform 300ms ease-in-out;
         &:hover {

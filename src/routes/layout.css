@@ -1,14 +1,37 @@
-@import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
-
-@import '@skeletonlabs/skeleton';
-@import '@skeletonlabs/skeleton-svelte';
-@import '@skeletonlabs/skeleton/themes/cerberus';
-
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    background-color: azure;
+}
+
+body {
+    font-family: "Comfortaa", system-ui, sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    background-color: #4a306d;
+    color: #bfd5f8;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    overflow: auto;
+    bottom: 0dvh;
+    padding: 0.5rem 1rem;
 }

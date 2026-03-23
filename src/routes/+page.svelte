@@ -38,6 +38,8 @@
     };
 </script>
 
+<div class="promo">Commissions come with a free bonus sketch during TFF!</div>
+
 <div class="embla">
     <div
         class="embla__viewport"
@@ -69,21 +71,16 @@
         <button class="embla__next" onclick={goToNext}>&gt;</button>
     </div>
 </div>
-<div class="other-pages">
-    <div>
-        <a href="/gallery"><h2>Art Gallery</h2></a>
-    </div>
-    <div>
-        <a href="/about"><h2>About Me</h2></a>
-    </div>
-    <div>
-        <a href="/commissions"><h2>Commisions Info</h2></a>
-    </div>
-</div>
 
 <style>
+    .promo {
+        text-align: center;
+        margin: 0.5rem 1rem 1.5rem;
+        padding: 0.75rem;
+        background-color: #bfd5d3;
+        color: #4a306d;
+    }
     .embla {
-        max-width: 48rem;
         margin: auto;
 
         --slide-size: 75%;
@@ -125,14 +122,27 @@
         justify-content: center;
         align-items: center;
         margin-right: calc((1.4rem - 0.7rem) / 2 * -1);
-        margin: 0 0.5rem;
+        margin: 1.5rem 0.5rem;
     }
 
-    .embla__prev {
-        padding: 0 1rem;
-    }
+    .embla__prev,
     .embla__next {
-        padding: 0 1rem;
+        opacity: 0.5;
+        border: 0;
+        padding: 0;
+        margin: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .embla__prev:hover,
+    .embla__next:hover {
+        opacity: 1;
     }
 
     .embla__dot {
@@ -168,28 +178,15 @@
     }
 
     .embla__dot:before {
-        border: 0.1rem solid rgb(25, 25, 25);
+        border: 0.1rem solid #6f9ceb;
     }
 
     .embla__dot:after {
-        border: 0.25rem solid rgb(11, 51, 180);
+        border: 0.25rem solid #918ef4;
         opacity: 0;
     }
 
     .embla__dot--selected:after {
         opacity: 1;
-    }
-
-    a {
-        font-weight: 500;
-        text-decoration: inherit;
-    }
-    .other-pages {
-        text-align: center;
-        font-size: 28px;
-    }
-
-    .other-pages a {
-        font-weight: bold;
     }
 </style>
