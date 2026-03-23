@@ -45,7 +45,7 @@
         use:useEmblaCarousel={{ options, plugins }}
     >
         <div class="embla__container">
-            {#each data.artUrls as src}
+            {#each data.splitArt as src}
                 <div class="embla__slide">
                     <div class="embla__slide__inner">
                         <img {src} alt="Art Carousel" />
