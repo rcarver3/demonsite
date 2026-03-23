@@ -7,13 +7,14 @@
         EmblaPluginType,
     } from "embla-carousel";
     import useEmblaCarousel from "embla-carousel-svelte";
+    import Autoplay from "embla-carousel-autoplay";
 
     let emblaApi: EmblaCarouselType;
     let options: EmblaOptionsType = { loop: true };
     let scrollSnaps: number[] = $state([]);
     let selectedSnap = $state(0);
 
-    const plugins: EmblaPluginType[] = [];
+    const plugins: EmblaPluginType[] = [Autoplay()];
 
     const scrollTo = (index: number) => emblaApi?.scrollTo(index);
 
