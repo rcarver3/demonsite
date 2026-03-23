@@ -37,9 +37,11 @@ header {
     padding: 0.5rem 1rem;
     font-size: 2rem;
     font-weight: bold;
+    padding-top: env(safe-area-inset-top);
 }
 
 footer {
-    margin: auto;
+    max-width: 450px;
+    width: 100%;
     padding-bottom: max(1rem, env(safe-area-inset-bottom));
 }
