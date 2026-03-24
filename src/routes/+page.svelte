@@ -53,7 +53,9 @@
             {#each data.splitArt as src}
                 <div class="embla__slide">
                     <div class="embla__slide__inner">
-                        <img {src} alt="Art Carousel" />
+                        <div class="image_holder">
+                            <img {src} alt="Art Carousel" />
+                        </div>
                     </div>
                 </div>
             {/each}
@@ -76,19 +78,10 @@
 </div>
 
 <style>
-    .promo {
-        text-align: center;
-        margin: 0.5rem 1rem 1.5rem;
-        padding: 0.75rem;
-        background-color: #bfd5d3;
-        color: #4a306d;
-    }
     .embla {
         margin: auto;
-
-        --slide-size: 75%;
-        --slide-spacing: 1rem;
-        --slide-height: 25rem;
+        --slide-size: 80%;
+        --slide-spacing: 20px;
     }
 
     .embla__viewport {
@@ -105,6 +98,7 @@
         flex: 0 0 var(--slide-size);
         min-width: 0;
         padding-left: var(--slide-spacing);
+        margin: auto;
     }
 
     .embla__slide__inner {
@@ -114,9 +108,7 @@
 
     .embla__slide__inner img {
         display: block;
-        height: var(--slide-height);
         width: 100%;
-        object-fit: contain;
     }
 
     .embla__dots {
@@ -125,7 +117,7 @@
         justify-content: center;
         align-items: center;
         margin-right: calc((1.4rem - 0.7rem) / 2 * -1);
-        margin: 1.5rem 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .embla__prev,

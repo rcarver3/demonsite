@@ -13,11 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
-    max-width: 450px;
 }
 
 .main {
-    flex: 1;
+    flex: auto;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -26,22 +26,18 @@ a {
     color: currentColor;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 header {
     margin: auto;
     padding: 0.5rem 1rem;
     font-size: 2rem;
     font-weight: bold;
-    padding-top: env(safe-area-inset-top);
+    padding-top: max(2rem, env(safe-area-inset-top));
+    max-width: 450px;
 }
 
 footer {
     max-width: 450px;
-    width: 100%;
     padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    margin: auto;
 }

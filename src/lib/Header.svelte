@@ -12,7 +12,7 @@
 <div class="navbar">
     <nav>
         <a href="/gallery">Gallery</a>
-        <a href="/commissions">Commisions</a>
+        <a href="/commissions">Commision</a>
         <a href="/about">About</a>
     </nav>
 </div>
@@ -23,15 +23,15 @@
     }
 
     img {
-        width: 50vw;
+        max-width: 100%;
     }
     nav {
         display: flex;
         margin: 0.5rem 1rem;
+        justify-content: space-between;
     }
 
     nav a {
-        flex: 1;
         font-size: 1.4rem;
         text-align: center;
     }
@@ -39,7 +39,7 @@
     .header {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
     }
     .logo {
         animation: float 4s ease-in-out infinite;
@@ -50,7 +50,7 @@
             transform: translateY(0px);
         }
         50% {
-            transform: translateY(-15px);
+            transform: translateY(-1rem);
         }
         100% {
             transform: translateY(0px);

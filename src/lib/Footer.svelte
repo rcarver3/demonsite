@@ -48,13 +48,17 @@
     a {
         float: left;
         text-align: center;
-        font-size: 1.0rem;
+        font-size: 1rem;
         width: 25%;
     }
 
     figure {
         margin: 0;
         padding: 1rem;
+    }
+
+    img {
+        max-width: 100%;
     }
 
     figcaption {
@@ -71,5 +75,4 @@
             transform: scale(1.75, 1.75);
         }
     }
-
 </style>
