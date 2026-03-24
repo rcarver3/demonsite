@@ -12,13 +12,14 @@
 <div class="navbar">
     <nav>
         <a href="/gallery">Gallery</a>
-        <a href="/commissions">Commision</a>
+        <a href="/commission">Commission</a>
         <a href="/about">About</a>
     </nav>
 </div>
 
 <style>
-    .header a {
+    .header a,
+    nav a {
         color: #6f9ceb;
     }
 

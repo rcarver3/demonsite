@@ -26,6 +26,9 @@ a {
     color: currentColor;
 }
 
+h1 {
+    color: #6f9ceb;
+}
 
 header {
     margin: auto;
