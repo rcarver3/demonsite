@@ -23,4 +23,9 @@
 </div>
 
 <style>
+    hr {
+        margin: 1rem auto;
+        width: 80%;
+        color: #6f9ceb;
+    }
 </style>

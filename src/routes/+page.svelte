@@ -79,7 +79,7 @@
 
 <style>
     .embla {
-        margin: auto;
+        margin: 1rem 0;
         --slide-size: 80%;
         --slide-spacing: 20px;
     }
