@@ -7,13 +7,14 @@
         EmblaPluginType,
     } from "embla-carousel";
     import useEmblaCarousel from "embla-carousel-svelte";
+    import Autoplay from "embla-carousel-autoplay";
 
     let emblaApi: EmblaCarouselType;
     let options: EmblaOptionsType = { loop: true };
     let scrollSnaps: number[] = $state([]);
     let selectedSnap = $state(0);
 
-    const plugins: EmblaPluginType[] = [];
+    const plugins: EmblaPluginType[] = [Autoplay()];
 
     const scrollTo = (index: number) => emblaApi?.scrollTo(index);
 
@@ -38,6 +39,10 @@
     };
 </script>
 
+<!--
+<div class="promo">Commissions come with a free bonus sketch during TFF!</div>
+-->
+
 <div class="embla">
     <div
         class="embla__viewport"
@@ -45,10 +50,12 @@
         use:useEmblaCarousel={{ options, plugins }}
     >
         <div class="embla__container">
-            {#each data.artUrls as src}
+            {#each data.splitArt as src}
                 <div class="embla__slide">
                     <div class="embla__slide__inner">
-                        <img {src} alt="Art Carousel" />
+                        <div class="image_holder">
+                            <img {src} alt="Art Carousel" />
+                        </div>
                     </div>
                 </div>
             {/each}
@@ -69,26 +76,12 @@
         <button class="embla__next" onclick={goToNext}>&gt;</button>
     </div>
 </div>
-<div class="other-pages">
-    <div>
-        <a href="/gallery"><h2>Art Gallery</h2></a>
-    </div>
-    <div>
-        <a href="/about"><h2>About Me</h2></a>
-    </div>
-    <div>
-        <a href="/commissions"><h2>Commisions Info</h2></a>
-    </div>
-</div>
 
 <style>
     .embla {
-        max-width: 48rem;
-        margin: auto;
-
-        --slide-size: 75%;
-        --slide-spacing: 1rem;
-        --slide-height: 25rem;
+        margin: 1rem 0;
+        --slide-size: 80%;
+        --slide-spacing: 20px;
     }
 
     .embla__viewport {
@@ -105,6 +98,7 @@
         flex: 0 0 var(--slide-size);
         min-width: 0;
         padding-left: var(--slide-spacing);
+        margin: auto;
     }
 
     .embla__slide__inner {
@@ -114,9 +108,7 @@
 
     .embla__slide__inner img {
         display: block;
-        height: var(--slide-height);
         width: 100%;
-        object-fit: contain;
     }
 
     .embla__dots {
@@ -124,15 +116,30 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-right: calc((1.4rem - 0.7rem) / 2 * -1);
-        margin: 0 0.5rem;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .embla__prev {
-        padding: 0 1rem;
-    }
+    .embla__prev,
     .embla__next {
-        padding: 0 1rem;
+        opacity: 0.5;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .embla__prev:hover,
+    .embla__next:hover,
+    .embla__dot:hover {
+        opacity: 1;
     }
 
     .embla__dot {
@@ -168,28 +175,15 @@
     }
 
     .embla__dot:before {
-        border: 0.1rem solid rgb(25, 25, 25);
+        border: 0.1rem solid #6f9ceb;
     }
 
     .embla__dot:after {
-        border: 0.25rem solid rgb(11, 51, 180);
+        border: 0.25rem solid #918ef4;
         opacity: 0;
     }
 
     .embla__dot--selected:after {
         opacity: 1;
-    }
-
-    a {
-        font-weight: 500;
-        text-decoration: inherit;
-    }
-    .other-pages {
-        text-align: center;
-        font-size: 28px;
-    }
-
-    .other-pages a {
-        font-weight: bold;
     }
 </style>
