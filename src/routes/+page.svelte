@@ -116,8 +116,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-right: calc((1.4rem - 0.7rem) / 2 * -1);
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .embla__prev,
@@ -125,7 +126,7 @@
         opacity: 0.5;
         border: 0;
         padding: 0;
-        margin: 0.5rem;
+        margin: 0;
         width: 1.5rem;
         height: 1.5rem;
 
