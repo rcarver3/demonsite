@@ -9,7 +9,14 @@
 <header>
 	<Header />
 </header>
-
+<div class="navbar">
+	<nav>
+		<a href="/">Home</a>
+		<a href="/gallery">Gallery</a>
+		<a href="/commission">Commission</a>
+		<a href="/about">About</a>
+	</nav>
+</div>
 <div class="main">
 	{@render children()}
 </div>

@@ -34,11 +34,10 @@ h1, h2, h3 {
 header {
     margin: auto;
     padding: 0.5rem 1rem;
+    padding-bottom: 0;
     font-size: 2rem;
     font-weight: bold;
     padding-top: max(2rem, env(safe-area-inset-top));
-    position: sticky;
-    top: 0;
     width: 100%;
     background: #4a306d;
 }
@@ -53,3 +52,26 @@ footer {
     background: #4a306d;
     width: 100%;
 }
+
+.navbar {
+    max-width: 450px;
+    margin: auto;
+    padding: max(1rem, env(safe-area-inset-top)) 0;
+    position: sticky;
+    top: 0;
+    background-color: #4a306d;
+    z-index: 1;
+    width: 100%;
+}
+    nav {
+        display: flex;
+        margin: 0.5rem 1rem;
+        justify-content: space-between;
+    }
+
+    nav a {
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-align: center;
+        color: #6f9ceb;
+    }

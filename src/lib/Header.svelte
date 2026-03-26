@@ -9,32 +9,14 @@
     <a href="/" class="title"> Demonically Online </a>
 </div>
 
-<div class="navbar">
-    <nav>
-        <a href="/gallery">Gallery</a>
-        <a href="/commission">Commission</a>
-        <a href="/about">About</a>
-    </nav>
-</div>
 
 <style>
-    .header a,
-    nav a {
+    .header a {
         color: #6f9ceb;
     }
 
     img {
         max-width: 100%;
-    }
-    nav {
-        display: flex;
-        margin: 0.5rem 1rem;
-        justify-content: space-between;
-    }
-
-    nav a {
-        font-size: 1.4rem;
-        text-align: center;
     }
 
     .header {
