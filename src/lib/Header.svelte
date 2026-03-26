@@ -9,7 +9,6 @@
     <a href="/" class="title"> Demonically Online </a>
 </div>
 
-
 <style>
     .header a {
         color: #6f9ceb;
@@ -22,10 +21,18 @@
     .header {
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
     }
     .logo {
+        flex: 1 1;
+        margin: 0 0.25rem;
         animation: float 4s ease-in-out infinite;
+    }
+    .title {
+        flex: 1 1 20%;
+        margin: 0 1.5rem;
+        font-size: 2.0rem;
+        font-weight: bold;
     }
 
     @keyframes float {
