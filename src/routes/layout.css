@@ -41,7 +41,6 @@ header {
 }
 
 footer {
-    padding-bottom: max(1rem, env(safe-area-inset-bottom));
     margin: auto;
     padding-left: 1rem;
     padding-right: 1rem;
