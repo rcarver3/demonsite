@@ -1,6 +1,13 @@
 <script lang="ts">
     let { data } = $props();
 
+    if (data.loc != null) {
+        window.clarity("set", "loc", data.loc);
+    }
+    if (data.type != null) {
+        window.clarity("set", "type", data.type);
+    }
+
     import type {
         EmblaCarouselType,
         EmblaOptionsType,
