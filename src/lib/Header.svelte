@@ -1,12 +1,13 @@
 <script lang="ts">
+    import { resolve } from "$app/paths";
     import profilePic from "$lib/icons/profile.png";
 </script>
 
 <div class="header">
-    <a href="/" class="logo">
+    <a href={resolve("/")} class="logo">
         <img src={profilePic} class="logo" alt="Demonically Online" />
     </a>
-    <a href="/" class="title"> Demonically Online </a>
+    <a href={resolve("/")} class="title"> Demonically Online </a>
 </div>
 
 <style>
@@ -31,7 +32,7 @@
     .title {
         flex: 1 1 20%;
         margin: 0 1.5rem;
-        font-size: 2.0rem;
+        font-size: 2rem;
         font-weight: bold;
     }
 

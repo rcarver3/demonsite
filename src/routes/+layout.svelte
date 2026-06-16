@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from "$app/paths";
 	import "./layout.css";
 	import Header from "$lib/Header.svelte";
 	import Footer from "$lib/Footer.svelte";
@@ -11,10 +12,10 @@
 </header>
 <div class="navbar">
 	<nav>
-		<a href="/">Home</a>
-		<a href="/gallery">Gallery</a>
-		<a href="/commission">Commission</a>
-		<a href="/about">About</a>
+		<a href={resolve("/")}>Home</a>
+		<a href={resolve("/gallery")}>Gallery</a>
+		<a href={resolve("/commission")}>Commission</a>
+		<a href={resolve("/about")}>About</a>
 	</nav>
 </div>
 <div class="main">

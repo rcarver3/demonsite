@@ -57,7 +57,7 @@
         use:useEmblaCarousel={{ options, plugins }}
     >
         <div class="embla__container">
-            {#each data.splitArt as src}
+            <!-- {#each data.splitArt as src}
                 <div class="embla__slide">
                     <div class="embla__slide__inner">
                         <div class="image_holder">
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-            {/each}
+            {/each} -->
         </div>
     </div>
 
