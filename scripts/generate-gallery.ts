@@ -10,7 +10,7 @@ interface GalleryImage {
 	featured: boolean;
 }
 
-const GALLERY_DIR = 'static/gallery';
+const GALLERY_DIR = 'static/art_gallery';
 const OUTPUT_FILE = 'src/lib/gallery-data.ts';
 const FEATURED_COUNT = 5;
 
@@ -71,7 +71,7 @@ function scanGalleryImages(): GalleryImage[] {
 	const images: GalleryImage[] = imageFiles.map((file, index) => {
 		const id = generateId(file);
 		const alt = generateAltText(file);
-		const src = `/static/gallery/${file}`;
+		const src = `art_gallery/${file}`;
 
 		// Mark first FEATURED_COUNT images as featured
 		const featured = index < FEATURED_COUNT;

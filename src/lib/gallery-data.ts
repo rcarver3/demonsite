@@ -17,235 +17,235 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
 	{
 		id: '000-acorn',
-		src: '/static/gallery/000_acorn.webp',
+		src: 'art_gallery/000_acorn.webp',
 		alt: 'Artwork: Acorn',
 		featured: true
 	},
 	{
 		id: '001-herculesebeetle',
-		src: '/static/gallery/001_herculesebeetle.webp',
+		src: 'art_gallery/001_herculesebeetle.webp',
 		alt: 'Artwork: Herculesebeetle',
 		featured: true
 	},
 	{
 		id: '002-fishsketch',
-		src: '/static/gallery/002_fishsketch.webp',
+		src: 'art_gallery/002_fishsketch.webp',
 		alt: 'Artwork: Fishsketch',
 		featured: true
 	},
 	{
 		id: '003-golduck',
-		src: '/static/gallery/003_golduck.webp',
+		src: 'art_gallery/003_golduck.webp',
 		alt: 'Artwork: Golduck',
 		featured: true
 	},
 	{
 		id: '004-briscoskunkpng',
-		src: '/static/gallery/004_briscoskunk.png.webp',
+		src: 'art_gallery/004_briscoskunk.png.webp',
 		alt: 'Artwork: Briscoskunk.png',
 		featured: true
 	},
 	{
 		id: 'animattempt',
-		src: '/static/gallery/animattempt.gif',
+		src: 'art_gallery/animattempt.gif',
 		alt: 'Artwork: Animattempt',
 		featured: false
 	},
 	{
 		id: 'ate',
-		src: '/static/gallery/ate.webp',
+		src: 'art_gallery/ate.webp',
 		alt: 'Artwork: Ate',
 		featured: false
 	},
 	{
 		id: 'ax2',
-		src: '/static/gallery/ax2.webp',
+		src: 'art_gallery/ax2.webp',
 		alt: 'Artwork: Ax2',
 		featured: false
 	},
 	{
 		id: 'buganimation-ezgifcom-video-to-gif-converter',
-		src: '/static/gallery/buganimation-ezgif.com-video-to-gif-converter.gif',
+		src: 'art_gallery/buganimation-ezgif.com-video-to-gif-converter.gif',
 		alt: 'Artwork: Buganimation Ezgif.com Video To Gif Converter',
 		featured: false
 	},
 	{
 		id: 'catnight',
-		src: '/static/gallery/catnight.webp',
+		src: 'art_gallery/catnight.webp',
 		alt: 'Artwork: Catnight',
 		featured: false
 	},
 	{
 		id: 'ciga',
-		src: '/static/gallery/ciga.webp',
+		src: 'art_gallery/ciga.webp',
 		alt: 'Artwork: Ciga',
 		featured: false
 	},
 	{
 		id: 'cockatricemon',
-		src: '/static/gallery/cockatricemon.webp',
+		src: 'art_gallery/cockatricemon.webp',
 		alt: 'Artwork: Cockatricemon',
 		featured: false
 	},
 	{
 		id: 'colors',
-		src: '/static/gallery/colors.webp',
+		src: 'art_gallery/colors.webp',
 		alt: 'Artwork: Colors',
 		featured: false
 	},
 	{
 		id: 'donnie',
-		src: '/static/gallery/donnie.webp',
+		src: 'art_gallery/donnie.webp',
 		alt: 'Artwork: Donnie',
 		featured: false
 	},
 	{
 		id: 'dragonthig',
-		src: '/static/gallery/dragonthig.webp',
+		src: 'art_gallery/dragonthig.webp',
 		alt: 'Artwork: Dragonthig',
 		featured: false
 	},
 	{
 		id: 'emogarf',
-		src: '/static/gallery/emogarf.webp',
+		src: 'art_gallery/emogarf.webp',
 		alt: 'Artwork: Emogarf',
 		featured: false
 	},
 	{
 		id: 'fantasticmrguy',
-		src: '/static/gallery/fantasticmrguy.webp',
+		src: 'art_gallery/fantasticmrguy.webp',
 		alt: 'Artwork: Fantasticmrguy',
 		featured: false
 	},
 	{
 		id: 'friendlyfrogs',
-		src: '/static/gallery/friendlyfrogs.webp',
+		src: 'art_gallery/friendlyfrogs.webp',
 		alt: 'Artwork: Friendlyfrogs',
 		featured: false
 	},
 	{
 		id: 'greenpinkcatidk',
-		src: '/static/gallery/greenpinkcatidk.webp',
+		src: 'art_gallery/greenpinkcatidk.webp',
 		alt: 'Artwork: Greenpinkcatidk',
 		featured: false
 	},
 	{
 		id: 'kindabeautiful',
-		src: '/static/gallery/kindabeautiful.webp',
+		src: 'art_gallery/kindabeautiful.webp',
 		alt: 'Artwork: Kindabeautiful',
 		featured: false
 	},
 	{
 		id: 'kiwii-nofilter',
-		src: '/static/gallery/kiwii_nofilter.webp',
+		src: 'art_gallery/kiwii_nofilter.webp',
 		alt: 'Artwork: Kiwii Nofilter',
 		featured: false
 	},
 	{
 		id: 'levi',
-		src: '/static/gallery/levi.webp',
+		src: 'art_gallery/levi.webp',
 		alt: 'Artwork: Levi',
 		featured: false
 	},
 	{
 		id: 'nemesis',
-		src: '/static/gallery/nemesis.webp',
+		src: 'art_gallery/nemesis.webp',
 		alt: 'Artwork: Nemesis',
 		featured: false
 	},
 	{
 		id: 'newmongeenbird',
-		src: '/static/gallery/newmongeenbird.webp',
+		src: 'art_gallery/newmongeenbird.webp',
 		alt: 'Artwork: Newmongeenbird',
 		featured: false
 	},
 	{
 		id: 'newstart',
-		src: '/static/gallery/newstart.webp',
+		src: 'art_gallery/newstart.webp',
 		alt: 'Artwork: Newstart',
 		featured: false
 	},
 	{
 		id: 'nomouth',
-		src: '/static/gallery/nomouth.webp',
+		src: 'art_gallery/nomouth.webp',
 		alt: 'Artwork: Nomouth',
 		featured: false
 	},
 	{
 		id: 'nova-pink',
-		src: '/static/gallery/nova_pink.webp',
+		src: 'art_gallery/nova_pink.webp',
 		alt: 'Artwork: Nova Pink',
 		featured: false
 	},
 	{
 		id: 'oobert',
-		src: '/static/gallery/oobert.webp',
+		src: 'art_gallery/oobert.webp',
 		alt: 'Artwork: Oobert',
 		featured: false
 	},
 	{
 		id: 'pallett1',
-		src: '/static/gallery/pallett1.webp',
+		src: 'art_gallery/pallett1.webp',
 		alt: 'Artwork: Pallett1',
 		featured: false
 	},
 	{
 		id: 'pallett2',
-		src: '/static/gallery/pallett2.webp',
+		src: 'art_gallery/pallett2.webp',
 		alt: 'Artwork: Pallett2',
 		featured: false
 	},
 	{
 		id: 'person',
-		src: '/static/gallery/person.webp',
+		src: 'art_gallery/person.webp',
 		alt: 'Artwork: Person',
 		featured: false
 	},
 	{
 		id: 'refsheit',
-		src: '/static/gallery/refsheit.webp',
+		src: 'art_gallery/refsheit.webp',
 		alt: 'Artwork: Refsheit',
 		featured: false
 	},
 	{
 		id: 'shadowrealm',
-		src: '/static/gallery/shadowrealm.webp',
+		src: 'art_gallery/shadowrealm.webp',
 		alt: 'Artwork: Shadowrealm',
 		featured: false
 	},
 	{
 		id: 'sphynx',
-		src: '/static/gallery/sphynx.webp',
+		src: 'art_gallery/sphynx.webp',
 		alt: 'Artwork: Sphynx',
 		featured: false
 	},
 	{
 		id: 'talkingoot',
-		src: '/static/gallery/talkingoot.webp',
+		src: 'art_gallery/talkingoot.webp',
 		alt: 'Artwork: Talkingoot',
 		featured: false
 	},
 	{
 		id: 'templeofthedog',
-		src: '/static/gallery/templeofthedog.webp',
+		src: 'art_gallery/templeofthedog.webp',
 		alt: 'Artwork: Templeofthedog',
 		featured: false
 	},
 	{
 		id: 'times',
-		src: '/static/gallery/times.webp',
+		src: 'art_gallery/times.webp',
 		alt: 'Artwork: Times',
 		featured: false
 	},
 	{
 		id: 'waxtonsona',
-		src: '/static/gallery/waxtonsona.webp',
+		src: 'art_gallery/waxtonsona.webp',
 		alt: 'Artwork: Waxtonsona',
 		featured: false
 	},
 	{
 		id: 'zaataz',
-		src: '/static/gallery/Zaataz.webp',
+		src: 'art_gallery/Zaataz.webp',
 		alt: 'Artwork: Zaataz',
 		featured: false
 	}
