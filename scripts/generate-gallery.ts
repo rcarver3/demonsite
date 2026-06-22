@@ -71,7 +71,7 @@ function scanGalleryImages(): GalleryImage[] {
 	const images: GalleryImage[] = imageFiles.map((file, index) => {
 		const id = generateId(file);
 		const alt = generateAltText(file);
-		const src = `/gallery/${file}`;
+		const src = `/static/gallery/${file}`;
 
 		// Mark first FEATURED_COUNT images as featured
 		const featured = index < FEATURED_COUNT;
