@@ -1,10 +1,12 @@
 import type { PageLoad } from "./$types";
-const cdnUrl = "https://cdn.demonically-online.com/";
+import { getAllGalleryImages } from "$lib/gallery-data";
 
-export const load: PageLoad = async ({ fetch }) => {
-    // const res = await fetch(cdnUrl + "manifest.json");
-    // const artList = await res.json();
-    // const artUrls = artList['files'].map((entry: string) => `${cdnUrl}${entry}`);
+export const load: PageLoad = async () => {
+	const artUrls = getAllGalleryImages().map((img) => ({
+		src: img.src,
+		alt: img.alt,
+		thumbnail: img.thumbnail
+	}));
 
-    // return { artUrls };
-}
+	return { artUrls };
+};

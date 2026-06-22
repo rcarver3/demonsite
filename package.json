@@ -1,7 +1,7 @@
 {
 	"name": "demonically-online",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -9,12 +9,14 @@
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"generate-gallery": "tsx scripts/generate-gallery.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "3.0.10",
 		"@sveltejs/kit": "^2.50.2",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"@types/node": "^26.0.0",
 		"constructs": "^10.5.1",
 		"esbuild": "^0.28.1",
 		"svelte": "^5.51.0",

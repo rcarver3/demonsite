@@ -5,9 +5,9 @@
 <h2 style="text-align: center">Art Gallery</h2>
 
 <div class="image-gallery">
-    <!-- {#each data.artUrls as src}
-        <img {src} alt="Gallery" />
-    {/each} -->
+    {#each data.artUrls as artwork}
+        <img src={artwork.src} alt={artwork.alt} />
+    {/each}
 </div>
 
 <style>

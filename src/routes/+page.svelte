@@ -1,13 +1,4 @@
 <script lang="ts">
-    let { data } = $props();
-
-    if (data.loc != null) {
-        window.clarity("set", "loc", data.loc);
-    }
-    if (data.type != null) {
-        window.clarity("set", "type", data.type);
-    }
-
     import type {
         EmblaCarouselType,
         EmblaOptionsType,
@@ -15,6 +6,24 @@
     } from "embla-carousel";
     import useEmblaCarousel from "embla-carousel-svelte";
     import Autoplay from "embla-carousel-autoplay";
+    import { page } from "$app/stores";
+
+    let { data } = $props();
+
+    $effect(() => {
+        // Only run Clarity tracking on the client side
+        if (typeof window !== "undefined" && window.clarity) {
+            const loc = $page.url.searchParams.get("loc");
+            const type = $page.url.searchParams.get("type");
+
+            if (loc != null) {
+                window.clarity("set", "loc", loc);
+            }
+            if (type != null) {
+                window.clarity("set", "type", type);
+            }
+        }
+    });
 
     let emblaApi: EmblaCarouselType;
     let options: EmblaOptionsType = { loop: true };
@@ -57,7 +66,7 @@
         use:useEmblaCarousel={{ options, plugins }}
     >
         <div class="embla__container">
-            <!-- {#each data.splitArt as src}
+            {#each data.splitArt as src}
                 <div class="embla__slide">
                     <div class="embla__slide__inner">
                         <div class="image_holder">
@@ -65,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-            {/each} -->
+            {/each}
         </div>
     </div>
 
