@@ -1,6 +1,6 @@
 <script lang="ts">
     import { resolve } from "$app/paths";
-    import profilePic from "$lib/icons/profile.png";
+    let profilePic = resolve('/icons/profile.png');
 </script>
 
 <div class="header">

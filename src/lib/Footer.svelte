@@ -1,8 +1,9 @@
 <script lang="ts">
-    import twitterLogo from "$lib/icons/twitter_icon.png";
-    import blueskyLogo from "$lib/icons/bluesky_icon.png";
-    import toyhouseLogo from "$lib/icons/toyhouse_icon.png";
-    import vgenLogo from "$lib/icons/vgen_icon.png";
+    import { resolve } from "$app/paths";
+    let twitterLogo = resolve("/icons/twitter_icon.png");
+    let blueskyLogo = resolve("/icons/bluesky_icon.png");
+    let toyhouseLogo = resolve("/icons/toyhouse_icon.png");
+    let vgenLogo = resolve("/icons/vgen_icon.png");
 </script>
 
 <div class="container">
